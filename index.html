@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="switch-dark-mode.css">
+    <script src="scipt.js"></script>
+</head>
+
+<body>
+
+    <div id="capa">
+        <!-- Header -->
+        <header>
+            <nav>
+                <div>
+                    <p>HP</p>
+                </div>
+                <div id="link-pagina">
+                    <a href="#sobre">Sobre Mim</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#curriculo">Currículo</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div>
+                    <label class="switch">
+                        <input checked="true" id="checkbox" type="checkbox" onclick="darkmode()" class="input">
+                        <span class="slider">
+                            <div class="star star_1"></div>
+                            <div class="star star_2"></div>
+                            <div class="star star_3"></div>
+                            <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                                <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff"
+                                    d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925">
+                                </path>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section id="hero">
+            <h1>HENRIQUE<br>POLTRONIERI</h1>
+            <p>Desenvolvedor Full-Stack</p>
+            <div class="scroll-indicator">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sobre Mim -->
+    <div id="sobre-mim">
+        <section class="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>
+                        Oi! Me chamo Henrique Poltronieri, tenho 17 anos e sou estudante do 2º ano do Ensino Médio
+                        técnico na área de TI no Colégio Cotemig, com conclusão prevista para dezembro de 2026.
+                        Atualmente estou desenvolvendo habilidades em programação e fundamentos de desenvolvimento
+                        de software.
+                    </p>
+
+                    <p>
+                        Possuo conhecimentos em HTML, CSS, JavaScript, C#, MySQL, e Pacote Office, com interesse
+                        especial em ser desenvolvedor Full-Stack com criação de soluções digitais que unam praticidade
+                        e eficiência. Tenho disposição para aprender continuamente, facilidade de adaptação e motivação
+                        para colaborar em projetos que envolvam inovação tecnológica e trabalho em equipe.
+                    </p>
+
+                    <p>
+                        Meu objetivo profissional é consolidar carreira na área de desenvolvedor Full-Stack,
+                        contribuindo para o crescimento de empresas e aprimorando constantemente minhas competências
+                        técnicas e interpessoais.
+                    </p>
+                </div>
+                <div class="sobre-image">
+                    <img src="img/minha-foto.png" alt="Henrique Poltronieri">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Habilidades -->
+    <div id="habilidades">
+        <section class="habilidades">
+
+            <h2>Habilidades</h2>
+            <div class="habilidades-grid">
+
+                <div class="habilidades-card">
+
+                    <h3>Soft Skills</h3>
+                    <div class="skill-bars">
+
+                        <div class="skill-item">
+                            <span>Comunicação</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>Trabalho em Equipe</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>Aprendizado rápido</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>Criatividade</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidades-card">
+
+                    <h3>Hard Skills</h3>
+                    <div class="skill-bars">
+
+                        <div class="skill-item">
+                            <span>Html, Css, JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 35%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>MySql</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>UI/UX Design/Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="curriculo">
+        <section class="curriculo">
+            <h2>MEU CURRÍCULO</h2>
+            <p>Baixe o PDF e veja minhas qualificações</p>
+            <a href="arquivos/Curriculo_Henrique_Poltronieri.pdf" download="Curriculo_Henrique_Poltronieri.pdf">
+                <button class="btn-download">Meu Currículo</button>
+            </a>
+
+        </section>
+    </div>
+
+    <!-- Projetos -->
+    <div id="projetos">
+        <section class="projetos">
+
+            <div class="titulo-e-btn">
+                <h2>PROJETOS</h2>
+                <button class="btn-ver-todos">Ver todos os projetos</button>
+            </div>
+
+            <div class="projetos-grid">
+
+                <div class="projeto-card">
+                    <div class="projeto-image"></div>
+                    <h3>Portifólio</h3>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image"></div>
+                    <h3>Clima Tempo</h3>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image"></div>
+                    <h3>Calculadora</h3>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image"></div>
+                    <h3>Social Media Dashboard</h3>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image"></div>
+                    <h3>Gerador de Senhas</h3>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image"></div>
+                    <h3>Conversor de Moedas em Tempo Real</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contato -->
+    <div id="contato">
+        <section id="contato" class="contato">
+            <div class="contato-grid">
+                <div class="contato-form">
+                    <h2>ENTRE EM CONTATO</h2>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <input type="text" placeholder="Assunto" required>
+                        <textarea placeholder="Mensagem" rows="5" required></textarea>
+                        <div class="btn">
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contato-info">
+                    <h2>MINHAS INFORMAÇÕES</h2>
+                    <div class="info-card">
+                        <h3>E-mail</h3>
+                        <p>12400319@aluno.cotemig.com.br</p>
+                        <h3>Telefone</h3>
+                        <p>+55 (31) 99394-9519</p>
+                        <p>Respondo em até 24 horas</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/HenriquePoltronieri" class="social-btn">GitHub</a>
+                        <a href="https://linkedin.com/in/henrique-poltronieri/" class="social-btn">LinkedIn</a>
+                        <a href="#" class="social-btn">E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <footer>
+            <p>Direitos reservados © Henrique Poltronieri</p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
