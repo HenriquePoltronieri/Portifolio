@@ -443,43 +443,6 @@ footer {
     border-top: 1px solid white;
 }
 
-/* Responsive */
-/* @media (max-width: 768px) {
-
-    .sobre-content,
-    .contato-grid {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        gap: 1rem;
-    }
-
-    .btn-ver-todos {
-        position: static;
-        display: block;
-        margin: 2rem auto;
-    }
-
-    section {
-        padding: 3rem 1rem;
-    }
-}
-
-@media (max-width: 704px) {
-    header p {
-        font-size: 1.5rem;
-        font-weight: 1000;
-    }
-
-    header a {
-        font-size: 0.7rem;
-    }
-    #link-pagina {
-        gap: 15px;
-    }
-
-} */
 
 
 
@@ -493,7 +456,7 @@ footer {
 
 
 
-
+/* Responsividade Header e Hero */
 @media (max-width: 768px) {
     
     nav {
@@ -513,6 +476,7 @@ footer {
     }
 }
 
+/* Responsividade Sobre Mim */
 @media (max-width: 768px) {
     .sobre-content {
         grid-template-columns: 1fr;
@@ -534,6 +498,7 @@ footer {
     }
 }
 
+/* Responsividade Projetos */
 @media (max-width: 768px) {
     
     section {
@@ -570,6 +535,7 @@ footer {
 
 }
 
+/* Responsividade Contato */
 @media (max-width: 768px) {
     .contato-grid {
         grid-template-columns: 1fr;
