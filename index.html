@@ -176,7 +176,9 @@
         <section class="projetos">
             <div class="titulo-e-btn">
                 <h2>PROJETOS</h2>
-                <button class="btn-ver-todos">Ver todos os projetos</button>
+                <a href="https://github.com/HenriquePoltronieri?tab=repositories">
+                    <button class="btn-ver-todos">Ver todos os projetos</button>
+                </a>
             </div>
             <div class="projetos-grid">
 
@@ -188,7 +190,9 @@
                 </div>
 
                 <div class="projeto-card" onclick="openModal('modalClima')">
-                    <div class="projeto-image"></div>
+                    <div class="projeto-image">
+                        <img src="img/projetos/clima-tempo.png" alt="">
+                    </div>
                     <h3>Clima Tempo</h3>
                 </div>
 
@@ -224,7 +228,7 @@
                 <p>
                     Este é o meu portfólio pessoal, desenvolvido para apresentar de forma clara e organizada meus
                     principais projetos e habilidades. Ele foi construído utilizando as tecnologias HTML, CSS e
-                    JavaScript puro, demonstrando meu domínio em desenvolvimento front-end.
+                    JavaScript, demonstrando meu domínio em desenvolvimento front-end.
                 </p>
 
                 <span id="tech" class="html"></span>
@@ -233,7 +237,7 @@
 
                 <br><br>
 
-                <a href="" class="btn-online">Ver On-line</a>
+                <a href="https://portifolio-henrique-poltronieri.vercel.app" class="btn-online">Ver On-line</a>
                 <a href="https://github.com/HenriquePoltronieri/Portifolio" class="btn-github">Ver no GitHub</a>
             </div>
         </dialog>
@@ -241,10 +245,23 @@
         <dialog id="modalClima" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal('modalClima')">&times;</span>
-                <img src="" alt="">
+                <img src="img/projetos/clima-tempo.png" alt="">
                 <h2>Clima Tempo</h2>
-                <p>Este projeto ainda está em construção. <br>
-                    Em breve estará disponível</p>
+                <p>
+                    Desenvolvi um programa que exibe, em tempo real, informações meteorológicas de uma cidade escolhida
+                    pelo usuário. O sistema apresenta dados com temperatura, umidade do ar e outras variáveis
+                    climáticas, utilizando integração com APIs de previsão do tempo.
+                </p>
+
+                <span id="tech" class="html"></span>
+                <span id="tech" class="css"></span>
+                <span id="tech" class="js"></span>
+                <span id="tech" class="api"></span>
+
+                <br><br>
+
+                <a href="https://clima-tempo-hrq.vercel.app" class="btn-online">Ver On-line</a>
+                <a href="https://github.com/HenriquePoltronieri/ClimaTempo" class="btn-github">Ver no GitHub</a>
             </div>
         </dialog>
 
