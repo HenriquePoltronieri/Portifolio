@@ -94,3 +94,50 @@
 .switch input:checked~.slider .cloud {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .switch {
+        width: 2.2em;
+        height: 1.3em;
+    }
+
+    .slider:before {
+        height: 0.6em;
+        width: 0.6em;
+        border-radius: 10px;
+        left: 0.25em;
+        bottom: 0.25em;
+        transition: 0.4s;
+        /* box-shadow: inset 8px -4px 0px 0px #fff; */
+    }
+
+    .switch input:checked+.slider:before {
+        transform: translateX(0.9em);
+    }
+
+    .star {
+        width: 1.75px;
+        height: 1.75px;
+    }
+
+    .star_1 {
+        left: 1.75em;
+        top: 0.25em;
+    }
+
+    .star_2 {
+        left: 1.1em;
+        top: 0.6em;
+    }
+
+    .star_3 {
+        left: 1.5em;
+        top: 0.45em;
+    }
+
+    .cloud {
+        width: 1.75em;
+        bottom: -0.7em;
+        left: -0.7em;
+    }
+}
