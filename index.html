@@ -12,7 +12,9 @@
 
 <body>
 
+    <!-- Capa -->
     <div id="capa">
+
         <!-- Header -->
         <header>
             <nav>
@@ -158,6 +160,7 @@
         </section>
     </div>
 
+    <!-- Curriculo -->
     <div id="curriculo">
         <section class="curriculo">
             <h2>MEU CURRÍCULO</h2>
@@ -176,32 +179,115 @@
                 <button class="btn-ver-todos">Ver todos os projetos</button>
             </div>
             <div class="projetos-grid">
-                <div class="projeto-card">
-                    <div class="projeto-image"></div>
+
+                <div class="projeto-card" onclick="openModal('modalPortifolio')">
+                    <div class="projeto-image">
+                        <img src="img/projetos/portifolio.png" alt="">
+                    </div>
                     <h3>Portifólio</h3>
                 </div>
-                <div class="projeto-card">
+
+                <div class="projeto-card" onclick="openModal('modalClima')">
                     <div class="projeto-image"></div>
                     <h3>Clima Tempo</h3>
                 </div>
-                <div class="projeto-card">
+
+                <div class="projeto-card" onclick="openModal('modalCalculadora')">
                     <div class="projeto-image"></div>
                     <h3>Calculadora</h3>
                 </div>
-                <div class="projeto-card">
+
+                <div class="projeto-card" onclick="openModal('modalDashboard')">
                     <div class="projeto-image"></div>
                     <h3>Social Media Dashboard</h3>
                 </div>
-                <div class="projeto-card">
+
+                <div class="projeto-card" onclick="openModal('modalSenhas')">
                     <div class="projeto-image"></div>
                     <h3>Gerador de Senhas</h3>
                 </div>
-                <div class="projeto-card">
+
+                <div class="projeto-card" onclick="openModal('modalConversor')">
                     <div class="projeto-image"></div>
                     <h3>Conversor de Moedas em Tempo Real</h3>
                 </div>
+
             </div>
         </section>
+
+        <!-- Modal dos projetos -->
+        <dialog id="modalPortifolio" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modalPortifolio')">&times;</span>
+                <img src="img/projetos/portifolio.png" alt="">
+                <h2>Portifólio</h2>
+                <p>
+                    Este é o meu portfólio pessoal, desenvolvido para apresentar de forma clara e organizada meus
+                    principais projetos e habilidades. Ele foi construído utilizando as tecnologias HTML, CSS e
+                    JavaScript puro, demonstrando meu domínio em desenvolvimento front-end.
+                </p>
+
+                <span id="tech" class="html"></span>
+                <span id="tech" class="css"></span>
+                <span id="tech" class="js"></span>
+
+                <br><br>
+
+                <a href="" class="btn-online">Ver On-line</a>
+                <a href="https://github.com/HenriquePoltronieri/Portifolio" class="btn-github">Ver no GitHub</a>
+            </div>
+        </dialog>
+
+        <dialog id="modalClima" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modalClima')">&times;</span>
+                <img src="" alt="">
+                <h2>Clima Tempo</h2>
+                <p>Este projeto ainda está em construção. <br>
+                    Em breve estará disponível</p>
+            </div>
+        </dialog>
+
+        <dialog id="modalCalculadora" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modalCalculadora')">&times;</span>
+                <img src="" alt="">
+                <h2>Calculadora</h2>
+                <p>Este projeto ainda está em construção. <br>
+                    Em breve estará disponível</p>
+            </div>
+        </dialog>
+
+        <dialog id="modalDashboard" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modalDashboard')">&times;</span>
+                <img src="" alt="">
+                <h2>Social Media Dashboard</h2>
+                <p>Este projeto ainda está em construção. <br>
+                    Em breve estará disponível</p>
+            </div>
+        </dialog>
+
+        <dialog id="modalSenhas" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modalSenhas')">&times;</span>
+                <img src="" alt="">
+                <h2>Gerador de Senhas</h2>
+                <p>Este projeto ainda está em construção. <br>
+                    Em breve estará disponível</p>
+            </div>
+        </dialog>
+
+        <dialog id="modalConversor" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('modalConversor')">&times;</span>
+                <img src="" alt="">
+                <h2>Conversor de Moedas em Tempo Real</h2>
+                <p>Este projeto ainda está em construção. <br>
+                    Em breve estará disponível</p>
+            </div>
+        </dialog>
+
     </div>
 
     <!-- Contato -->
@@ -242,12 +328,14 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="https://linkedin.com/in/henrique-poltronieri/" id="social-btn" class="linkedin" title="Linkein">
+                        <a href="https://linkedin.com/in/henrique-poltronieri/" id="social-btn" class="linkedin"
+                            title="Linkein">
                             <img src="
                             https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-                            style="width: 40px; height: 40px;" />
+                                style="width: 40px; height: 40px;" />
                         </a>
-                        <a href="mailto:henrique.poltronieri2008@gmail.com" id="social-btn" class="email" target="_blank" title="E-mail">
+                        <a href="mailto:henrique.poltronieri2008@gmail.com" id="social-btn" class="email"
+                            target="_blank" title="E-mail">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" width="40" height="40" viewBox="0 0 256 256" xml:space="preserve">
                                 <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
