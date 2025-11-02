@@ -28,6 +28,20 @@ body {
 
 /* variaveis de cor pro dark mode */
 :root {
+    --bg-1: #001D39;
+    --bg-2: #191D23;
+    --accent: #3d6a9e;
+    --bar-color-1: #11416e;
+    --bar-color-2: #0084ff;
+    --bg-github: #181616;
+    --bg-linkedin: #0076b2;
+    --bg-email: rgb(182, 50, 50);
+    --bg-projeto-card: #0084ff;
+
+    --color-txt-1: #fff;
+}
+
+[data-theme="dark"] {
     --bg-1: #8928FF;
     --bg-2: #bd84ff;
     --accent: #af5fff;
@@ -38,20 +52,6 @@ body {
     --bg-email: rgb(182, 50, 50);
     --bg-projeto-card: #a461f7;
     ;
-
-    --color-txt-1: #fff;
-}
-
-.darkmode {
-    --bg-1: #001D39;
-    --bg-2: #191D23;
-    --accent: #3d6a9e;
-    --bar-color-1: #11416e;
-    --bar-color-2: #0084ff;
-    --bg-github: #181616;
-    --bg-linkedin: #0076b2;
-    --bg-email: rgb(182, 50, 50);
-    --bg-projeto-card: #0084ff;
 
     --color-txt-1: #fff;
 }
