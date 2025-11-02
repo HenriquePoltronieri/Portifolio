@@ -10,22 +10,6 @@ body {
     color: var(--color-txt-1);
 }
 
-/* Particulas */
-.particle {
-    position: absolute;
-    pointer-events: none;
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    animation: fadeOut 1s linear forwards;
-}
-
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0);
-    }
-}
-
 /* variaveis de cor pro dark mode */
 :root {
     --bg-1: #001D39;

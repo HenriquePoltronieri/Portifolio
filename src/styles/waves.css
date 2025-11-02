@@ -70,19 +70,3 @@
         transform: translate3d(85px, 0, 0);
     }
 }
-
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-    .waves {
-        height: 40px;
-        min-height: 40px;
-    }
-
-    .content {
-        height: 30vh;
-        bottom: -10px;
-    }
-    .direitos {
-        font-size: 12px;
-    }
-}
