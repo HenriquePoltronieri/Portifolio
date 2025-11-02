@@ -38,7 +38,7 @@
         <header>
             <nav>
                 <div>
-                    <a href="">
+                    <a href="#">
                         <p>HP</p>
                     </a>
                 </div>
@@ -195,7 +195,7 @@
         <section class="projetos">
             <div class="titulo-e-btn">
                 <h2>PROJETOS</h2>
-                <a href="https://github.com/HenriquePoltronieri?tab=repositories">
+                <a href="https://github.com/HenriquePoltronieri?tab=repositories" target="_blank" rel="noopener noreferrer">
                     <button class="btn-ver-todos">Ver todos os projetos</button>
                 </a>
             </div>
@@ -216,7 +216,9 @@
                 </div>
 
                 <div class="projeto-card" onclick="openModal('modalCalculadora')">
-                    <div class="projeto-image"></div>
+                    <div class="projeto-image">
+                        <img src="img/projetos/calculadora.png" alt="">
+                    </div>
                     <h3>Calculadora</h3>
                 </div>
 
@@ -256,8 +258,8 @@
 
                 <br><br>
 
-                <a href="https://portifolio-henrique-poltronieri.vercel.app" class="btn-online">Ver On-line</a>
-                <a href="https://github.com/HenriquePoltronieri/Portifolio" class="btn-github">Ver no GitHub</a>
+                <a href="https://portifolio-henrique-poltronieri.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-online">Ver On-line</a>
+                <a href="https://github.com/HenriquePoltronieri/Portifolio" target="_blank" rel="noopener noreferrer" class="btn-github">Ver no GitHub</a>
             </div>
         </dialog>
 
@@ -279,18 +281,27 @@
 
                 <br><br>
 
-                <a href="https://clima-tempo-hrq.vercel.app" class="btn-online">Ver On-line</a>
-                <a href="https://github.com/HenriquePoltronieri/ClimaTempo" class="btn-github">Ver no GitHub</a>
+                <a href="https://clima-tempo-hrq.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-online">Ver On-line</a>
+                <a href="https://github.com/HenriquePoltronieri/ClimaTempo" target="_blank" rel="noopener noreferrer" class="btn-github">Ver no GitHub</a>
             </div>
         </dialog>
 
         <dialog id="modalCalculadora" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal('modalCalculadora')">&times;</span>
-                <img src="" alt="">
+                <img src="img/projetos/calculadora.png" alt="">
                 <h2>Calculadora</h2>
-                <p>Este projeto ainda está em construção. <br>
-                    Em breve estará disponível</p>
+                <p>Esta é uma calculadora web desenvolvida com HTML, CSS e JavaScript, criada para praticar o uso de funções e operações matemáticas básicas. Ela possui uma interface simples, responsiva e intuitiva, permitindo realizar cálculos como soma, subtração, multiplicação e divisão diretamente pelo navegador.
+                </p>
+
+                <span id="tech" class="html"></span>
+                <span id="tech" class="css"></span>
+                <span id="tech" class="js"></span>
+
+                <br><br>
+
+                <a href="https://calculadora-hrq.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-online">Ver On-line</a>
+                <a href="https://github.com/HenriquePoltronieri/Calculadora" target="_blank" rel="noopener noreferrer" class="btn-github">Ver no GitHub</a>
             </div>
         </dialog>
 
@@ -349,10 +360,9 @@
                         <p>12400319@aluno.cotemig.com.br</p>
                         <h3>Telefone</h3>
                         <p>+55 (31) 99394-9519</p>
-                        <p>Respondo em até 24 horas</p>
                     </div>
                     <div id="social-links">
-                        <a href="https://github.com/HenriquePoltronieri" id="social-btn" class="github" title="Git Hub">
+                        <a href="https://github.com/HenriquePoltronieri" target="_blank" rel="noopener noreferrer" id="social-btn" class="github" title="Git Hub">
                             <svg viewBox="0 0 128 128" style="width: 40px; height: 40px;">
                                 <g fill="#fff">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -364,13 +374,13 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="https://linkedin.com/in/henrique-poltronieri/" id="social-btn" class="linkedin"
+                        <a href="https://linkedin.com/in/henrique-poltronieri/" target="_blank" rel="noopener noreferrer" id="social-btn" class="linkedin"
                             title="Linkein">
                             <img src="
                             https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
                                 style="width: 40px; height: 40px;" />
                         </a>
-                        <a href="mailto:henrique.poltronieri2008@gmail.com" id="social-btn" class="email"
+                        <a href="mailto:henrique.poltronieri2008@gmail.com" target="_blank" rel="noopener noreferrer" id="social-btn" class="email"
                             target="_blank" title="E-mail">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" width="40" height="40" viewBox="0 0 256 256" xml:space="preserve">
