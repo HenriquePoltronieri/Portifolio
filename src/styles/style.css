@@ -26,8 +26,10 @@ body {
     --bg-projeto-card: #0084ff;
 
     --bg-color-button: #4A4A4A;
-    
+
     --color-txt-1: #fff;
+    --color-txt-2: #cccbcb;
+    --color-txt-3: #4f7ec4;
 }
 
 [data-theme="dark"] {
@@ -43,10 +45,12 @@ body {
     --bg-email: rgb(182, 50, 50);
 
     --bg-projeto-card: #a461f7;
-    
-    --bg-color-button: #7125ce;;
+
+    --bg-color-button: #7125ce;
 
     --color-txt-1: #fff;
+    --color-txt-2: #dddddd;
+    --color-txt-3: #63517e;
 }
 
 
@@ -77,7 +81,7 @@ body {
 }
 
 .svgIcon {
-    width: 12px;
+    width: 14px;
     transition-duration: 0.3s;
 }
 
@@ -139,7 +143,7 @@ header a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 3px;
+    height: 2.5px;
     left: 0;
     bottom: 0;
     background-color: var(--color-txt-1);
@@ -149,6 +153,19 @@ header a::after {
 header a:hover::after {
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Hero */
 #hero {
@@ -167,15 +184,27 @@ header a:hover::after {
     line-height: 1.2;
 }
 
-#hero p {
+.text {
+    color: var(--color-txt-2);
+    font-weight: 300;
     padding-top: 1rem;
-    font-size: clamp(13px, 15px, 20px);
+    font-size: clamp(13px, 20px, 25px);
+}
+
+.typing {
+    color: var(--color-txt-3);
+    font-weight: 1000;
+    font-size: clamp(13px, 20px, 25px);
 }
 
 .scroll-indicator {
     position: absolute;
     bottom: 40px;
     animation: bounce 0.9s infinite;
+}
+
+.scroll-indicator {
+    cursor: pointer;
 }
 
 @keyframes bounce {
@@ -196,6 +225,12 @@ header a:hover::after {
         transform: translateY(-10px);
     }
 }
+
+
+
+
+
+
 
 
 /* Sections */
@@ -625,7 +660,7 @@ h2 {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     color: var(--color-txt-1);
-    font-family: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contato-form input::placeholder,
@@ -878,6 +913,6 @@ footer {
     }
 
     .direitos {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
