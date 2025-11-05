@@ -26,7 +26,7 @@ body {
     --bg-projeto-card: #0084ff;
 
     --bg-color-button: #4A4A4A;
-
+    
     --color-txt-1: #fff;
     --color-txt-2: #cccbcb;
     --color-txt-3: #4f7ec4;
@@ -45,7 +45,7 @@ body {
     --bg-email: rgb(182, 50, 50);
 
     --bg-projeto-card: #a461f7;
-
+    
     --bg-color-button: #7125ce;
 
     --color-txt-1: #fff;
@@ -201,9 +201,6 @@ header a:hover::after {
     position: absolute;
     bottom: 40px;
     animation: bounce 0.9s infinite;
-}
-
-.scroll-indicator {
     cursor: pointer;
 }
 
@@ -444,8 +441,8 @@ h2 {
 
 .projetos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
     margin-top: 3rem;
     text-align: center;
 }
@@ -464,7 +461,7 @@ h2 {
 
 .projeto-image {
     width: 100%;
-    height: 250px;
+    height: auto;
     background: var(--accent);
 }
 
@@ -663,8 +660,7 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.contato-form input::placeholder,
-.contato-form textarea::placeholder {
+.contato-form input::placeholder {
     color: var(--color-txt-1);
 }
 
@@ -840,6 +836,8 @@ footer {
 
     .projetos-grid {
         margin-top: 2rem;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .projeto-image {

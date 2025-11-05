@@ -1,3 +1,5 @@
+//! Dark Mode
+
 const THEME_KEY = 'websiteTheme';
 const CHECKBOX_ID = 'checkbox';
 

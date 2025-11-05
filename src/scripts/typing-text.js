@@ -1,3 +1,5 @@
+//! Typing Text
+
 var typing = new Typed(".typing", {
     strings: ["Front-End", "Web"],
     typeSpeed: 100,
