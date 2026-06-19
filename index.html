@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
+<head> <link rel="icon" type="image/png" href="favi.png"> 
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Henrique Poltronieri — Desenvolvedor Fullstack</title>
@@ -30,6 +31,7 @@
         </button>
         <ul class="nav-links" id="nav-links">
             <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#courses">Cursos</a></li>
@@ -43,10 +45,10 @@
         <div class="hero-content">
             <p class="hero-eyebrow">Olá, eu sou</p>
             <h1 class="hero-title">Henrique<br>Poltronieri</h1>
-            <h2 class="hero-subtitle">Desenvolvedor <span class="accent">Fullstack</span></h2>
-            <p class="hero-desc">
-                Desenvolvedor Back-end com foco em Java e Python, criando APIs escaláveis e de alta performance.
-                No Mobile, desenvolvo aplicações modernas com Flutter, Kotlin e Swift, priorizando performance e
+            <h2 class="hero-subtitle">Dev <span class="accent">Back-end &amp; Mobile</span></h2>
+            <p class="about-text">
+                <strong>Desenvolvedor Back-end</strong> com foco em Java e Python, criando APIs escaláveis e de alta performance,
+                e <strong>Desenvolvedor Mobile</strong>, desenvolvendo aplicações modernas com Flutter, Kotlin e Swift, priorizando performance e
                 experiência do usuário.
             </p>
             <div class="hero-actions">
@@ -95,6 +97,57 @@
             <div class="floating-badge badge-1">Mobile</div>
             <div class="floating-badge badge-2">Back-End</div>
             <div class="floating-badge badge-3">Fullstack</div>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <span class="section-tag">Sobre mim</span>
+                    <h2 class="section-title">Quem sou <span class="accent">eu?</span></h2>
+                    <p class="about-text">
+                        Tenho 17 anos e sou estudante do 3º ano do Curso Técnico de TI
+                        (Desenvolvimento Web &amp; Mobile) no <strong>Colégio Cotemig</strong>,
+                        com conclusão prevista para dezembro de 2026.
+                    </p>
+                    <p class="about-text">
+                        Meu foco está em desenvolvimento <strong>Back-end</strong> com Java e Python,
+                        criando APIs escaláveis, e em <strong>Mobile</strong> com Flutter, Kotlin e Swift.
+                        Tenho grande interesse em seguir carreira como desenvolvedor Full-Stack,
+                        criando soluções que unam praticidade e inovação.
+                    </p>
+                </div>
+                <div class="about-right">
+                    <div class="about-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-body">
+                                <span class="timeline-year">2026</span>
+                                <h4>Desenvolvimento Mobile</h4>
+                                <p>Programação orientada a objetos (POO) e início no desenvolvimento mobile com Flutter, Kotlin e Swift.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-body">
+                                <span class="timeline-year">2025</span>
+                                <h4>Aumentando conhecimentos</h4>
+                                <p>Aprofundamento em lógica de programação, fundamentos de banco de dados, front-end, redes de computadores.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-body">
+                                <span class="timeline-year">2024</span>
+                                <h4>Início do Curso Técnico no Colégio Cotemig</h4>
+                                <p> Lógica de programação, robótica e montagem e configuração de computadores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -336,6 +389,7 @@
                 <span class="section-tag">Portfólio</span>
                 <h2 class="section-title">Meus <span class="accent">Projetos</span></h2>
             </div>
+<<<<<<< HEAD
             <div class="filter-bar">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="kotlin">Kotlin</button>
@@ -351,6 +405,44 @@
                     data-techs="Kotlin,JVM,Gradle,Android" data-status="Concluído"
                     data-github="https://github.com/HenriquePoltronieri/SmartInvest-2.0---Kotlin"
                     data-demo="https://github.com/HenriquePoltronieri/SmartInvest-2.0---Kotlin"
+=======
+
+            <div class="projects-grid">
+
+                <!-- Sistema PY — Python -->
+                <div class="project-card" data-tags="python"
+                    data-title="Sistema PY — Produção, Vendas e Estoque"
+                    data-desc="Sistema completo para controle de produção, vendas e estoque desenvolvido com Python. A empresa PY fabrica veículos de corrida e utiliza este software para cadastrar produtos, registrar vendas, controlar estoque e calcular faturamento em tempo real. O projeto possui backend, frontend e documentação completa com 25 commits de histórico."
+                    data-techs="Python,Backend,Frontend,JSON,Lógica de Negócio"
+                    data-status="Concluído"
+                    data-github="https://github.com/HenriquePoltronieri/Projeto-PY-primeira-etapa"
+                    data-demo="https://github.com/HenriquePoltronieri/Projeto-PY-primeira-etapa"
+                    data-lang-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    data-img-class="project-img--python">
+                    <div class="project-img project-img--python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            class="project-lang-icon" alt="Python" />
+                        <span class="project-img-label">Python Script</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-api">Backend</span>
+                        </div>
+                        <h3>Sistema PY — Estoque &amp; Vendas</h3>
+                        <p>Sistema completo de controle de produção, vendas e estoque para empresa de veículos de corrida. Backend + Frontend + documentação.</p>
+                    </div>
+                </div>
+
+                <!-- Bulls and Cows — Kotlin -->
+                <div class="project-card" data-tags="kotlin"
+                    data-title="Bulls &amp; Cows — Jogo em Kotlin"
+                    data-desc="Implementação do clássico jogo de adivinhação Bulls and Cows (similar ao Mastermind) em Kotlin. O computador gera uma palavra secreta e o jogador tenta descobri-la em tentativas limitadas. Após cada tentativa, o jogo informa acertos exatos (bulls) e acertos parciais (cows). Pratica lógica, funções, manipulação de strings e validação de entrada."
+                    data-techs="Kotlin,JVM,IntelliJ IDEA,Lógica de Programação"
+                    data-status="Concluído"
+                    data-github="https://github.com/HenriquePoltronieri/Bulls-and-Cowns---Kotlin"
+                    data-demo="https://github.com/HenriquePoltronieri/Bulls-and-Cowns---Kotlin"
+>>>>>>> 4dfee5ebb4fb7d257b61b222f8867f41e95a129f
                     data-lang-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
                     data-img-class="project-img--kotlin">
                     <div class="project-img project-img--kotlin">
@@ -361,6 +453,7 @@
                     <div class="project-body">
                         <div class="project-tags">
                             <span class="tag tag-kotlin">Kotlin</span>
+<<<<<<< HEAD
                             <span class="tag tag-android">Fintech</span>
                         </div>
                         <h3>SmartInvest 2.0</h3>
@@ -375,18 +468,65 @@
                     data-techs="Dart,OOP,Classes Abstratas,Herança,Polimorfismo" data-status="Concluído"
                     data-github="https://github.com/HenriquePoltronieri/atividade-revisao-framework---Dart"
                     data-demo="https://github.com/HenriquePoltronieri/atividade-revisao-framework---Dart"
+=======
+                            <span class="tag tag-android">Game</span>
+                        </div>
+                        <h3>Bulls &amp; Cows — Kotlin</h3>
+                        <p>Jogo de adivinhação Bulls and Cows implementado em Kotlin com sistema de feedback de acertos exatos e parciais.</p>
+                    </div>
+                </div>
+
+                <!-- Valorant API — Dart -->
+                <div class="project-card" data-tags="flutter"
+                    data-title="Valorant API — Consumo de API em Dart"
+                    data-desc="Projeto em Dart que consome a API pública do Valorant obtendo informações sobre os agentes do jogo. Os dados são armazenados localmente em arquivo JSON e o usuário pode listar todos os agentes, buscar por nome ou deletar itens via menu interativo no console. Demonstra assincronia, consumo de API REST, manipulação de arquivos e dart:io."
+                    data-techs="Dart,HTTP,dart:convert,dart:io,JSON,API REST"
+                    data-status="Concluído"
+                    data-github="https://github.com/HenriquePoltronieri/valorant_api---Dart"
+                    data-demo="https://github.com/HenriquePoltronieri/valorant_api---Dart"
+>>>>>>> 4dfee5ebb4fb7d257b61b222f8867f41e95a129f
                     data-lang-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
                     data-img-class="project-img--flutter">
                     <div class="project-img project-img--flutter">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
                             class="project-lang-icon" alt="Dart" />
+<<<<<<< HEAD
                         <span class="project-img-label">Dart</span>
+=======
+                        <span class="project-img-label">Flutter App</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-flutter">Dart</span>
+                            <span class="tag tag-dart">API REST</span>
+                        </div>
+                        <h3>Valorant API — Dart</h3>
+                        <p>Consumo de API pública do Valorant com persistência local em JSON e menu interativo de busca e deleção.</p>
+                    </div>
+                </div>
+
+                <!-- Struct — Swift -->
+                <div class="project-card" data-tags="swift"
+                    data-title="Struct — Modelagem de Dados em Swift"
+                    data-desc="Atividade prática desenvolvida em Swift utilizando Xcode Playground com foco no uso de struct para modelagem de dados. O projeto contém duas structs criadas como exercício: uma representando um Smartphone e outra representando um Aluno em sala de aula, com suporte a atendimento via método mutating. Demonstra OOP, encapsulamento e métodos mutating."
+                    data-techs="Swift,Xcode,Playground,Struct,OOP"
+                    data-status="Concluído"
+                    data-github="https://github.com/HenriquePoltronieri/Struct---Swift"
+                    data-demo="https://github.com/HenriquePoltronieri/Struct---Swift"
+                    data-lang-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg"
+                    data-img-class="project-img--swift">
+                    <div class="project-img project-img--swift">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg"
+                            class="project-lang-icon" alt="Swift" />
+                        <span class="project-img-label">iOS App</span>
+>>>>>>> 4dfee5ebb4fb7d257b61b222f8867f41e95a129f
                     </div>
                     <div class="project-body">
                         <div class="project-tags">
                             <span class="tag tag-flutter">Dart</span>
                             <span class="tag tag-api">OOP</span>
                         </div>
+<<<<<<< HEAD
                         <h3>Framework OOP — Dart</h3>
                         <p>5 sistemas reais em Dart: pagamentos, dispositivos inteligentes, oficina, frete e assinaturas — demonstrando herança, classes abstratas e polimorfismo.</p>
                     </div>
@@ -399,11 +539,27 @@
                     data-techs="Kotlin,JVM,Gradle,OOP,Design Patterns" data-status="Concluído"
                     data-github="https://github.com/HenriquePoltronieri/Eco-System-2.0---Kotlin"
                     data-demo="https://github.com/HenriquePoltronieri/Eco-System-2.0---Kotlin"
+=======
+                        <h3>Struct — Swift</h3>
+                        <p>Modelagem de dados com struct em Swift no Xcode Playground. Demonstra OOP, métodos mutating e encapsulamento.</p>
+                    </div>
+                </div>
+
+                <!-- Herança e Polimorfismo — Kotlin -->
+                <div class="project-card" data-tags="kotlin"
+                    data-title="Herança e Polimorfismo — Kotlin"
+                    data-desc="Projeto em Kotlin focado na demonstração de herança e polimorfismo, dois dos pilares fundamentais da Programação Orientada a Objetos. Implementa hierarquias de classes, sobrescrita de métodos e comportamentos polimórficos, demonstrando o domínio de OOP aplicada ao desenvolvimento Android e mobile com Kotlin."
+                    data-techs="Kotlin,OOP,Herança,Polimorfismo,JVM"
+                    data-status="Concluído"
+                    data-github="https://github.com/HenriquePoltronieri/Heranca-e-polimorfismo---Kotlin"
+                    data-demo="https://github.com/HenriquePoltronieri/Heranca-e-polimorfismo---Kotlin"
+>>>>>>> 4dfee5ebb4fb7d257b61b222f8867f41e95a129f
                     data-lang-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
                     data-img-class="project-img--kotlin">
                     <div class="project-img project-img--kotlin">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
                             class="project-lang-icon" alt="Kotlin" />
+<<<<<<< HEAD
                         <span class="project-img-label">Kotlin</span>
                     </div>
                     <div class="project-body">
@@ -485,6 +641,42 @@
                         </div>
                         <h3>Jogo da Forca</h3>
                         <p>Jogo da forca em Python com arquitetura modular — lógica, banco de palavras e utilitários em módulos separados, demonstrando organização e boas práticas.</p>
+=======
+                        <span class="project-img-label">Kotlin Android</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-kotlin">Kotlin</span>
+                            <span class="tag tag-android">OOP</span>
+                        </div>
+                        <h3>Herança &amp; Polimorfismo — Kotlin</h3>
+                        <p>Demonstração de herança e polimorfismo em Kotlin, pilares fundamentais da OOP aplicada ao desenvolvimento mobile.</p>
+                    </div>
+                </div>
+
+                <!-- ChatBot Flutter — Em desenvolvimento -->
+                <div class="project-card" data-tags="flutter"
+                    data-title="ChatBot — Flutter"
+                    data-desc="Aplicativo de chatbot desenvolvido em Flutter com integração a uma API de inteligência artificial. Interface conversacional moderna, histórico de mensagens e experiência de usuário fluida. Projeto em desenvolvimento ativo — em breve disponível no GitHub."
+                    data-techs="Flutter,Dart,API de IA,Material Design"
+                    data-status="Em desenvolvimento"
+                    data-github="#"
+                    data-demo="#"
+                    data-lang-icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+                    data-img-class="project-img--flutter">
+                    <div class="project-img project-img--flutter">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+                            class="project-lang-icon" alt="Flutter" />
+                        <span class="project-img-label">Flutter App</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-flutter">Flutter</span>
+                            <span class="tag tag-dart">IA</span>
+                        </div>
+                        <h3>ChatBot — Flutter</h3>
+                        <p>Aplicativo de chatbot multiplataforma em Flutter com integração a IA. Interface conversacional moderna e fluida.</p>
+>>>>>>> 4dfee5ebb4fb7d257b61b222f8867f41e95a129f
                     </div>
                 </div>
 
@@ -516,6 +708,7 @@
                     </div>
                     <ul class="course-list">
                         <li>Pensamento computacional: fundamentos da computação e lógica de programação</li>
+                        <li>Dart: trabalhando com a sintaxe e configuração de projeto</li>
                     </ul>
                 </div>
             </div>

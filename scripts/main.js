@@ -1,6 +1,4 @@
-/* ===========================
-    SCROLL PROGRESS INDICATOR
-   =========================== */
+// SCROLL PROGRESS INDICATOR
 const scrollIndicator = document.getElementById('scroll-indicator');
 
 function updateScrollIndicator() {
@@ -10,9 +8,7 @@ function updateScrollIndicator() {
     scrollIndicator.style.width = progress + '%';
 }
 
-/* ===========================
-    NAVBAR SCROLL EFFECT
-   =========================== */
+// NAVBAR SCROLL EFFECT
 const navbar = document.getElementById('navbar');
 
 function updateNavbar() {
@@ -23,9 +19,7 @@ function updateNavbar() {
     }
 }
 
-/* ===========================
-    MOBILE HAMBURGER MENU
-   =========================== */
+// MOBILE HAMBURGER MENU
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
@@ -39,9 +33,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-/* ===========================
-    INTERSECTION OBSERVER — FADE IN
-   =========================== */
+// INTERSECTION OBSERVER — FADE IN
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -63,9 +55,7 @@ document.querySelectorAll('.skill-card, .course-card').forEach(el => {
     observer.observe(el);
 });
 
-/* ===========================
-    PROJECT FILTER
-   =========================== */
+// PROJECT FILTER
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -90,9 +80,7 @@ filterBtns.forEach(btn => {
     });
 });
 
-/* ===========================
-    CONTACT FORM SUBMIT
-   =========================== */
+// CONTACT FORM SUBMIT
 const contactForm = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 
@@ -117,9 +105,7 @@ if (contactForm) {
     });
 }
 
-/* ===========================
-    SMOOTH ACTIVE NAV HIGHLIGHT
-   =========================== */
+// SMOOTH ACTIVE NAV HIGHLIGHT
 const sections = document.querySelectorAll('section[id]');
 const navItems = document.querySelectorAll('.nav-links a');
 
@@ -140,49 +126,18 @@ function highlightActiveNav() {
     });
 }
 
-/* ===========================
-    SCROLL EVENT LISTENER
-   =========================== */
+// SCROLL EVENT LISTENER
 window.addEventListener('scroll', () => {
     updateScrollIndicator();
     updateNavbar();
     highlightActiveNav();
 }, { passive: true });
 
-/* ===========================
-    CURSOR GLOW EFFECT (desktop)
-   =========================== */
-if (window.innerWidth > 1024) {
-    const glow = document.createElement('div');
-    glow.style.cssText = `
-    position: fixed;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
-    background: radial-gradient(circle, rgba(124,58,237,0.06) 0%, transparent 70%);
-    transform: translate(-50%, -50%);
-    transition: left 0.5s ease, top 0.5s ease;
-    will-change: left, top;
-    `;
-    document.body.appendChild(glow);
-
-    document.addEventListener('mousemove', (e) => {
-        glow.style.left = e.clientX + 'px';
-        glow.style.top = e.clientY + 'px';
-    });
-}
-
-/* ===========================
-    INITIAL CALL
-   =========================== */
+// INITIAL CALL
 updateNavbar();
 
 
-/* ===================================================
-    PROJECT MODAL
-   =================================================== */
+// PROJECT MODAL
 const modalOverlay = document.getElementById('modal-overlay');
 const modalClose = document.getElementById('modal-close');
 const modalBanner = document.getElementById('modal-banner');
