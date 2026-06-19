@@ -181,7 +181,7 @@ updateNavbar();
 
 
 /* ===================================================
-   PROJECT MODAL
+    PROJECT MODAL
    =================================================== */
 const modalOverlay = document.getElementById('modal-overlay');
 const modalClose = document.getElementById('modal-close');
