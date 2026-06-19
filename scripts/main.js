@@ -51,7 +51,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.skill-card, .course-card').forEach(el => {
+document.querySelectorAll('.skill-card, .course-card, .event-card').forEach(el => {
     observer.observe(el);
 });
 
@@ -83,9 +83,10 @@ filterBtns.forEach(btn => {
 // CONTACT FORM SUBMIT
 const contactForm = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
+const formError = document.getElementById('form-error');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const btn = contactForm.querySelector('button[type="submit"]');
@@ -93,15 +94,28 @@ if (contactForm) {
         btn.textContent = 'Enviando...';
         btn.disabled = true;
 
-        setTimeout(() => {
-            contactForm.reset();
+        try {
+            const response = await fetch('https://formspree.io/f/xojzgwjw', {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                contactForm.reset();
+                formSuccess.classList.add('show');
+                setTimeout(() => formSuccess.classList.remove('show'), 5000);
+            } else {
+                formError.classList.add('show');
+                setTimeout(() => formError.classList.remove('show'), 5000);
+            }
+        } catch {
+            formError.classList.add('show');
+            setTimeout(() => formError.classList.remove('show'), 5000);
+        } finally {
             btn.textContent = originalText;
             btn.disabled = false;
-            formSuccess.classList.add('show');
-            setTimeout(() => {
-                formSuccess.classList.remove('show');
-            }, 4000);
-        }, 1200);
+        }
     });
 }
 
